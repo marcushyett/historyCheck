@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Recently Typed URLs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <style>
+      body {
+        min-width: 300px;
+        padding: 0 10px;
+      }
+      ul {
+        padding: 0
+      }
+      li {
+        list-style: none;
+      }
+      hr {
+        margin: 5px 0;
+      }
+      .link-title {
+        text-transform: capitalize;
+      }
+      .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background-color: #03a9f4;
+        color:white;
+        text-align: center;
+      }
+      h3 {
+        margin-top: 30px;
+      }
+    </style>
+    <script src='background.js'></script>
+  </head>
+
+  <body>
+    <div class="header">History Check</div>
+    <h3 id="title"></h3>
+    <div class="container">
+      <label>Timescale:</label>
+      <select id="time_range" class="form-control">
+        <option value="day">last day</option>
+        <option value="week" selected>last week</option>
+        <option value="month">last month</option>
+        <option value="year">last year</option>
+      </select>
+      <br/>
+      <label>Pages visisted:</label>
+      <div id="output"></div>
+    </div>
+  </body>
+</html>

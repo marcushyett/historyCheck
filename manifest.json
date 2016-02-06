@@ -1,0 +1,14 @@
+{
+  "name": "History",
+  "version": "1.0",
+  "description": "Gives you insight into your history on this site",
+  "permissions": [
+    "history",
+    "tabs"
+  ],
+  "browser_action": {
+    "default_popup": "background.html",
+    "default_icon": "clock.png"
+  },
+  "manifest_version": 2
+}
